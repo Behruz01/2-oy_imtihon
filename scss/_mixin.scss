@@ -1,0 +1,49 @@
+@mixin flex($jcontent: center, $align: center) {
+  display: flex;
+  justify-content: $jcontent;
+  align-items: $align;
+}
+@mixin btn_red() {
+  font-family: "$DMSerifDisplay-Regular";
+  font-size: 15px;
+  line-height: 18px;
+
+  letter-spacing: -0.115385px;
+
+  color: #fbfcfe;
+  background: #ba4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  //   border-radius: 5px;
+  border-radius: 24px;
+  border: none;
+
+  padding: 15px 25px;
+  &:hover {
+    background: #da6d97;
+  }
+  &:active {
+    background: #ba4270;
+  }
+}
+@mixin btn_black() {
+  font-family: "$PublicSans-Bold";
+  font-size: 15px;
+  line-height: 18px;
+
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+
+  background: #1b262f;
+  text-align: center;
+  letter-spacing: -0.115385px;
+
+  color: #fbfcfe;
+
+  padding: 15px 25px;
+  &:hover {
+    background: #ffffff;
+  }
+  &:active {
+    color: #fbfcfe;
+  }
+}
