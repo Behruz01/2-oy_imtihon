@@ -4,7 +4,7 @@
   align-items: $align;
 }
 @mixin btn_red() {
-  font-family: "$DMSerifDisplay-Regular";
+  font-family: "DMSerif-regular";
   font-size: 15px;
   line-height: 18px;
 
@@ -26,7 +26,7 @@
   }
 }
 @mixin btn_black() {
-  font-family: "$PublicSans-Bold";
+  font-family: "PubliSans-Bold-700";
   font-size: 15px;
   line-height: 18px;
 
