@@ -1,0 +1,60 @@
+.footer {
+  background: #1b262f;
+  padding: 31px 165px;
+  &__wrapper {
+    @include flex(space-between);
+  }
+  &__left {
+    @include flex;
+    gap: 64px;
+  }
+  &__item {
+    @include flex;
+    gap: 40px;
+  }
+  &__link {
+    font-family: "PubliSans-Bold-700";
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #fbfcfe;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    &:hover {
+      color: #90b0f0;
+    }
+  }
+  &__right {
+    @include flex;
+    gap: 24px;
+  }
+}
+.footer__svg:hover {
+  fill: #da6d97;
+}
+.footer__svg:active {
+  fill: red;
+}
+@media only screen and(max-width:768px) {
+  .footer {
+    padding: 31px 40px;
+  }
+}
+@media only screen and(max-width:376px) {
+  .footer {
+    padding: 41px 120px 55px 120px;
+    &__wrapper {
+      flex-direction: column;
+      gap: 41px;
+    }
+    &__left {
+      flex-direction: column;
+      gap: 43px;
+    }
+    &__item {
+      flex-direction: column;
+      gap: 31px;
+    }
+  }
+}
