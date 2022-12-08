@@ -1,0 +1,47 @@
+.header {
+  &__wrapper {
+    @include flex(space-between);
+    padding-top: 40px;
+  }
+  &__nav {
+    @include flex(space-between);
+    gap: 64px;
+  }
+  &__item {
+    @include flex(space-between);
+    gap: 40px;
+  }
+  &__link {
+    font-family: "PubliSans-Bold-700";
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #36536b;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+
+    &:hover {
+      color: black;
+    }
+  }
+  &__btn {
+    @include btn_red();
+  }
+  &__hamburg {
+    display: none;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .header {
+    &__item {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+    &__hamburg {
+      display: block;
+    }
+  }
+}
