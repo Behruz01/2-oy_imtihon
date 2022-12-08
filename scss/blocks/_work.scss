@@ -44,8 +44,35 @@
       flex-direction: column-reverse;
     }
     &__item {
-      max-width: 536px;
+      width: 547px;
       display: flex;
+      margin-bottom: 23px;
+    }
+    &__white {
+      text-align: center;
+    }
+    &__today {
+      text-align: center;
+    }
+    &__btn {
+      margin-left: 160px;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .work {
+    padding: 85px 24px 80px 24px;
+
+    &__item {
+      gap: 48px;
+      width: 327px;
+    }
+    &__white {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__btn {
+      margin-left: 85px;
     }
   }
 }
