@@ -1,0 +1,58 @@
+.inform {
+  padding-bottom: 96px;
+  &__title3 {
+    font-family: "PubliSans-Bold-700";
+    font-size: 18px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: -0.138462px;
+
+    color: #36536b;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-family: "PublicSans-400";
+    font-size: 15px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: -0.115385px;
+
+    color: #6c8294;
+  }
+  &__list {
+    max-width: 350px;
+    text-align: center;
+  }
+  &__item {
+    @include flex();
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .inform {
+    padding-bottom: 100px;
+
+    &__item {
+      gap: 10px;
+    }
+    &__list {
+      max-width: 223px;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .inform {
+    padding-bottom: 80px;
+
+    &__item {
+      gap: 48px;
+      flex-direction: column;
+    }
+    &__list {
+      max-width: 328px;
+    }
+  }
+}
