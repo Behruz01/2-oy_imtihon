@@ -1,0 +1,54 @@
+.simple {
+  padding-bottom: 146px;
+  &__wrapper {
+    @include flex();
+    gap: 97px;
+  }
+  &__ux {
+    font-family: "DMSerif-regular";
+    font-size: 48px;
+    line-height: 56px;
+
+    letter-spacing: -0.369231px;
+
+    color: #36536b;
+  }
+  &__form {
+    color: #6c8294;
+    margin-top: 24px;
+  }
+  &__left {
+    max-width: 445px;
+  }
+  &__img {
+    border-radius: 17px;
+  }
+}
+@media only screen and(max-width:768px) {
+  .simple {
+    padding-bottom: 100px;
+
+    &__wrapper {
+      flex-direction: column-reverse;
+      gap: 48px;
+    }
+    &__ux {
+      text-align: center;
+    }
+    &__form {
+      text-align: center;
+    }
+  }
+}
+@media only screen and(max-width:376px) {
+  .simple {
+    padding-bottom: 80px;
+
+    &__ux {
+      font-size: 36px;
+      line-height: 36px;
+
+      letter-spacing: -0.276923px;
+    }
+  }
+}
